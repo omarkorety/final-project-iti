@@ -30,4 +30,13 @@ build image for jenkins using Dockerfile by
 ```bash
 kubectl create -f deployment.yaml
 ```
-    
+
+# project requirements
+
+use separate namespace for Jenkins's deployment and application's deployment 
+
+![Screenshot from 2022-11-16 21-03-00](https://user-images.githubusercontent.com/29188579/202277025-c3c36b29-9f61-4c87-9fee-ba7790544f76.png)
+
+![Screenshot from 2022-11-16 21-03-10](https://user-images.githubusercontent.com/29188579/202277057-6c5eb838-27b6-4f5d-b1d8-dfa3e5b024dd.png)
+
+
