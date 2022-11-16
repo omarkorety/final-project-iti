@@ -1,3 +1,8 @@
+project structure
+![WhatsApp Image 2022-11-10 at 1 36 46 AM](https://user-images.githubusercontent.com/29188579/202280547-2288fa35-4fbb-4645-b85d-e181717e8ce6.jpeg)
+
+
+
 
 # deploy backend application on kubernetes cluster using CI/CD Jenkins pipeline
 
@@ -57,3 +62,9 @@ https://github.com/omarkorety/simple-app
 
 # my application link 
 http://35.234.0.45:5000/
+
+
+## Lessons Learned
+
+I learned how to configure kubernetes cluster on GCP and acquired experiences on GCP 
+
