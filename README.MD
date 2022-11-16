@@ -64,6 +64,8 @@ kubectl create namespace myppp
 # project final screenshot
 ![Screenshot from 2022-11-16 19-40-25](https://user-images.githubusercontent.com/29188579/202278759-4a484726-8c76-49ec-95fe-5465dab87766.png)
 
+![Screenshot from 2022-11-16 13-50-42](https://user-images.githubusercontent.com/29188579/202290119-c2bb52e0-1cf1-4f84-b0cd-5df397ab07ba.png)
+
 # My appplication repo 
 https://github.com/omarkorety/simple-app
 
@@ -73,5 +75,5 @@ http://35.234.0.45:5000/
 
 ## Lessons Learned
 
-I learned how to configure kubernetes cluster on GCP and acquired experiences on GCP 
+I learned how to configure kubernetes cluster on GCP and acquired experiences on GCP platform 
 
