@@ -40,3 +40,10 @@ use separate namespace for Jenkins's deployment and application's deployment
 ![Screenshot from 2022-11-16 21-03-10](https://user-images.githubusercontent.com/29188579/202277057-6c5eb838-27b6-4f5d-b1d8-dfa3e5b024dd.png)
 
 
+use github
+![Screenshot from 2022-11-16 20-09-58](https://user-images.githubusercontent.com/29188579/202277487-0a35fc86-9aaf-4f5d-9539-041af9b2e2fc.png)
+ webhook
+
+
+
+
