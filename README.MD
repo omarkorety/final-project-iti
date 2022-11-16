@@ -75,5 +75,4 @@ http://35.234.0.45:5000/
 
 ## Lessons Learned
 
-I learned how to configure kubernetes cluster on GCP and acquired experiences on GCP platform 
-
+I learned how to configure kubernetes cluster on GCP,acquired experiences on GCP platform and learned how to use all the tools together for development life cycle 
