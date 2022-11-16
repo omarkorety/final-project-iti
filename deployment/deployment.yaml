@@ -1,0 +1,85 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins
+  namespace: jenkins
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+        - name: jenkins
+          image: omarkorety/myjenkins:V5
+
+          ports:
+            - name: jenkins-port
+              containerPort: 8080
+            - name: unknown-port
+              containerPort: 50000
+
+          volumeMounts:
+            - name: jenkins-data
+              mountPath: /var/jenkins_home
+            
+            # - name: kubernetes
+            #   mountPath: /usr/bin/kubectl
+            #   subPath: kubectl
+            
+            # - name: docker
+            #   mountPath: /usr/bin/docker
+            #   subPath: docker
+            
+            - name: dockersock
+              mountPath: /var/run/docker.sock
+      
+      # initContainers:
+      #   # - name: init-docker
+      #   #   image: docker
+      #   #   command: ["cp","/usr/local/bin/docker", "/opt/othertemp"]    
+            
+      #     # volumeMounts:  
+      #     #   - name: docker
+      #     #     mountPath: /opt/othertemp
+ 
+      #   - name: init-k8s
+      #     image: alpine/k8s:1.23.13
+      #     command: ["cp","/usr/bin/kubectl", "/opt/temp"]
+
+      #     volumeMounts:
+      #       - name: kubernetes
+      #         mountPath: "/opt/temp"
+        
+      volumes:
+        - name: jenkins-data
+          emptyDir: {}
+
+        # - name: kubernetes
+        #   emptyDir: {}
+
+        # - name: docker
+        #   emptyDir: {}
+        
+        - name: dockersock
+          hostPath:
+            path: /var/run/docker.sock
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: jenkins
+  namespace: jenkins
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 8080
+      targetPort: 8080
+  selector:
+    app: jenkins
