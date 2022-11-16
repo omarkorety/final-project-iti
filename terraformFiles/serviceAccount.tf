@@ -15,12 +15,6 @@ resource "google_project_iam_binding" "project_iam" {
   ]
 }
 
-# resource "google_service_account_iam_member" "admin-account-iam" {
-#   service_account_id = google_service_account.omar_service_account.name
-#   role               = "roles/iam.seiceAccountUser"
-
-#   member = "google_service_account.omar_service_account.email"
-# }
 
 
 
