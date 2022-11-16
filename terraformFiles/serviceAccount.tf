@@ -19,6 +19,4 @@ resource "google_project_iam_binding" "project_iam" {
 
 
 
-
-# "google_service_account.omar_service_account.email",
  

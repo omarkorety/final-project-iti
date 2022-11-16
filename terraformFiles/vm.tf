@@ -29,7 +29,7 @@ resource "google_compute_instance" "private-vm" {
     email  = google_service_account.omar_service_account.email
     scopes = ["cloud-platform"]
   }
-
+#install kubectl and docker in our VM
 
     metadata_startup_script = <<-EOF
   curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
