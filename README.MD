@@ -34,6 +34,10 @@ kubectl create -f deployment.yaml
 # project requirements
 
 use separate namespace for Jenkins's deployment and application's deployment 
+```bash
+kubectl create namespace Jenkins
+kubectl create namespace myppp
+```
 
 ![Screenshot from 2022-11-16 21-03-00](https://user-images.githubusercontent.com/29188579/202277025-c3c36b29-9f61-4c87-9fee-ba7790544f76.png)
 
