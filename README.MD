@@ -68,7 +68,7 @@ kubectl create namespace myppp
 https://github.com/omarkorety/simple-app
 
 # My application link 
-http://35.234.0.45:5000/
+http://35.229.161.81:5000/
 
 
 ## Lessons Learned
